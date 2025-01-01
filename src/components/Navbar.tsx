@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Facebook, Twitter, Linkedin, Instagram, Menu } from 'lucide-react';
 import { scrollToSection } from '../utils/scrollUtils';
 import MobileMenu from './MobileMenu';
+import logo from '..assets/logo.png';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -27,7 +28,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <img src="/src/assets/logo.png" className='w-16' alt="" />
+            <img src={logo} className='w-16' alt="" />
             <span className="text-xl font-bold text-justify">Aditya Industrial Agri Products</span>
           </div>
           
