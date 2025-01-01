@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Facebook, Twitter, Linkedin, Instagram, Menu } from 'lucide-react';
 import { scrollToSection } from '../utils/scrollUtils';
 import MobileMenu from './MobileMenu';
-import logo from '..assets/logo.png';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
